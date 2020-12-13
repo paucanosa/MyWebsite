@@ -1,6 +1,9 @@
 var plugins = [{
+      plugin: require('C:/Users/pauca/Documents/GitHub/MyWebsite/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"transpileTemplateLiterals":true,"pure":false},
+    },{
       plugin: require('C:/Users/pauca/Documents/GitHub/MyWebsite/node_modules/gatsby-plugin-typography/gatsby-ssr'),
-      options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
+      options: {"plugins":[],"pathToConfigModule":"src/utils/typography","fonts":["CeraPro","Avenir Next","Avenir","Helvetica","Ubuntu","DejaVu Sans","Arial"]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
