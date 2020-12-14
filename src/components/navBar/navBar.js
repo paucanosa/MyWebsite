@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import headerList from '../../data/navOptions';
+import { Link } from 'gatsby';
 
 const Navigation = styled.nav`
   display: flex;

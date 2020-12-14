@@ -12,11 +12,11 @@ export default [
     path: '/projects',
   },
   {
-    label: 'Contact',
-    path: '/contact',
-  },
-  {
     label: 'Interests',
     path: '/interests',
+  },
+  {
+    label: 'Contact',
+    path: '/contact',
   },
 ];
