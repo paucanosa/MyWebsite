@@ -1,15 +1,10 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
-
-const ListLink = (props) => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-);
+import Navbar from './navBar/navBar';
 
 const Wrapper = styled.div`
-  background-color: #f3f3fb;
+  background-color: white;
+  background-image: none;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,16 +22,7 @@ const Wrapper = styled.div`
 export default function Layout({ children }) {
   return (
     <Wrapper>
-      <header style={{ marginBottom: `1.5rem` }}>
-        <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h3 style={{ display: `inline` }}>MySweetSite</h3>
-        </Link>
-        <ul style={{ listStyle: `none`, float: `right` }}>
-          <ListLink to="/">Home</ListLink>
-          <ListLink to="/about/">About</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
-        </ul>
-      </header>
+      <Navbar />
       {children}
     </Wrapper>
   );

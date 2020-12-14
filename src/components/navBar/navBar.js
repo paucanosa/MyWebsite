@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import NavbarLinks from './NavbarLinks';
-import headerList from '../../data/Navigation';
+import headerList from '../../data/navOptions';
 
 const Navigation = styled.nav`
   display: flex;
@@ -71,6 +70,38 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `;
+const NavItem = styled(Link)`
+  color: black;
+  background-image: none;
+  margin-right: 35px;
+  transition: color 0.2s ease-out;
+  text-decoration: none;
+  :hover {
+    color: #39af96;
+    transition: color 0.2s;
+  }
+  &.active {
+    color: #39af96;
+  }
+  transition: all 200ms ease-in;
+  position: relative;
+  :after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: goldenrod;
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
+  @media (max-width: 768px) {
+    padding: 8px 0;
+    z-index: 6;
+  }
+`;
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -81,7 +112,9 @@ const Navbar = () => {
       </Toggle>
       <Navbox open={!navbarOpen}>
         {headerList.map((navItem) => (
-          <NavbarLinks info={navItem} key={navItem.label} />
+          <NavItem to={navItem.path} exact={'true'} activeClassName="active">
+            {navItem.label}
+          </NavItem>
         ))}
       </Navbox>
     </Navigation>
