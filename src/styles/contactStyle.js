@@ -6,9 +6,6 @@ export const ContactTitle = styled.h1`
   font-size: 1.7em;
   font-weight: bold;
   color: #00000;
-  @media (max-width: 700px) {
-    font-size: 3em;
-  }
 `;
 
 export const EmailSentence = styled.p`
@@ -17,7 +14,8 @@ export const EmailSentence = styled.p`
   font-size: 1.3em;
   color: #00000;
   @media (max-width: 700px) {
-    font-size: 3em;
+    margin-top: 5%;
+    font-size: 1.3em;
   }
 `;
 
@@ -28,7 +26,7 @@ export const EmailTitle = styled.a`
   background-image: none;
   color: #00000;
   @media (max-width: 700px) {
-    font-size: 3em;
+    font-size: 1em;
   }
 `;
 
@@ -44,4 +42,9 @@ export const SitesWrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  @media (max-width: 700px) {
+    margin-top: 5.5%;
+    flex-direction: column;
+    align-items: center;
+  }
 `;

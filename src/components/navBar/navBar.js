@@ -45,7 +45,7 @@ const Navbox = styled.div`
 `;
 
 const Hamburger = styled.div`
-  background-color: #ffffff;
+  background-color: black;
   width: 32px;
   height: 2px;
   transition: all 0.3s linear;
@@ -56,7 +56,7 @@ const Hamburger = styled.div`
   ::after {
     width: 32px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: black;
     content: '';
     position: absolute;
     transition: all 0.3s linear;

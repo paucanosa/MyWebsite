@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const descriptionWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const UserTitle = styled.h1`
   font-size: 3.2em;
   font-weight: bold;
@@ -27,6 +32,7 @@ export const UserDescription = styled.div`
     }
   }
 `;
+
 export const AboutWrapper = styled.div`
   margin: 5% auto;
 `;

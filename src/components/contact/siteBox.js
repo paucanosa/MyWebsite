@@ -13,8 +13,8 @@ const Box = styled(Link)`
   padding: 1% 1%;
   margin-right: 3%;
   margin-bottom: 3%;
-  width: 20%;
-  max-width: 220px;
+  width: 220px;
+  height: 74px;
   display: flex;
   flex-direction: row;
   transition: box-shadow 0.5s ease-out;
@@ -24,15 +24,10 @@ const Box = styled(Link)`
       0 5px 5px -3px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.5s;
   }
-  :last-of-type {
-    margin-right: 0;
-  }
   p {
     margin-bottom: 0px;
   }
   @media (max-width: 700px) {
-    width: 100%;
-    min-height: auto;
     padding: 5%;
   }
 `;
@@ -48,9 +43,10 @@ const SiteBox = ({ info }) => (
       src={info.srcImg}
       style={{
         width: '50px',
+        height: '50px',
         margin: 0,
         display: 'flex',
-        alignItems: 'center',
+        alignSelf: 'center',
       }}
     ></img>
     <SiteTitle
