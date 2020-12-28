@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 export const ContactTitle = styled.h1`
+  margin-top: 150px;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
