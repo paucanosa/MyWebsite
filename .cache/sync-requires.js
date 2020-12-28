@@ -10,7 +10,6 @@ exports.components = {
   "component---src-pages-contact-js": hot(preferDefault(require("C:\\Users\\pauca\\Documents\\GitHub\\MyWebsite\\src\\pages\\contact.js"))),
   "component---src-pages-experience-js": hot(preferDefault(require("C:\\Users\\pauca\\Documents\\GitHub\\MyWebsite\\src\\pages\\experience.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("C:\\Users\\pauca\\Documents\\GitHub\\MyWebsite\\src\\pages\\index.js"))),
-  "component---src-pages-interests-js": hot(preferDefault(require("C:\\Users\\pauca\\Documents\\GitHub\\MyWebsite\\src\\pages\\interests.js"))),
   "component---src-pages-projects-js": hot(preferDefault(require("C:\\Users\\pauca\\Documents\\GitHub\\MyWebsite\\src\\pages\\projects.js")))
 }
 

@@ -12,10 +12,6 @@ export default [
     path: '/projects',
   },
   {
-    label: 'Interests',
-    path: '/interests',
-  },
-  {
     label: 'Contact',
     path: '/contact',
   },
